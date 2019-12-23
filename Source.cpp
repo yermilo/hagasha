@@ -16,31 +16,39 @@ int main() {
 	arr = new Person*[size];
 
 	for (int i = 0; i < size; i++) {
-		cout << "For the " << i << " Person:  " << endl;
-		cout << "If the person is an employee Enter 1:" << endl;
-		cout << "If the person is a student Enter 2:" << endl;
+		cout << "For the " << i+1 << " Person:  " << endl;
+		cout << "If the person is an employee Enter 1" << endl;
+		cout << "If the person is a student Enter 2" << endl << "Choice: ";
 		cin >> choice;
 			switch (choice)
 			{
 			case (1):
-				cout << "Enter employee" << endl << "name: <<";
+				cout << "==Enter employee==" << endl << "Enter name: <<";
 				cin >> name;
-				cout << "ID: ";
+				cout << "Enter ID: ";
 				cin >> id;
-				cout << "age: ";
+				cout << "Enter age: ";
 				cin >> age;
-				cout << "salary: ";
+				cout << "Enter salary: ";
 				cin >> salary;
 				arr[i] = new employee(name,id,age,salary);
 				break;
 			case (2):
-				cout << "enter student name ,id ,age,avarage,institute " << endl;
-				cin >> name >> id >> age >> avarage,institute;
+				cout << "==Enter student==" << endl << "Enter Name: ";
+				cin >> name;
+				cout << "Enter ID: ";
+				cin >> id;
+				cout << "Enter Age: ";
+				cin >> age;
+				cout << "Avarage: ";
+				cin >> avarage;
+				cout << "institute";
+				cin >> institute;
 				arr[i] = new student(name, id, age, avarage, institute);
 				break;
 			}
 			for (int i = 0; i < size; i++) {
-				arr[i]->print;
+				//arr[i]->print;
 			}
 	}
 	return 0;
