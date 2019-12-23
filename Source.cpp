@@ -5,6 +5,15 @@
 #include<iostream>
 using namespace std;
 
+void PrintArr(Person ** arr,int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		cout << "===Person Number " << i + 1 << "====" << endl;
+		arr[i]->print();
+	}
+}
+
 int main() {
 	Person** arr;
 	int size,choice,age,avarage;
@@ -61,12 +70,9 @@ int main() {
 				i--;
 			}
 	}
+	PrintArr(arr, size);
 
-	for (int i = 0; i < size; i++)
-	{
-		cout << "===Person Number " << i + 1 << "====" << endl;
-		arr[i]->print();
-	}
+	
 	return 0;
 }
 
