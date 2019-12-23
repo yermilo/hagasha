@@ -29,6 +29,11 @@ int main() {
 				cin >> id;
 				cout << "Enter age: ";
 				cin >> age;
+				while (age <= 0)
+				{
+					cout << "Error- Age Illigal!!\nTry Again!\nEnter Age: ";
+					cin >> age;
+				}
 				cout << "Enter salary: ";
 				cin >> salary;
 				arr[i] = new employee(name,id,age,salary);
@@ -40,6 +45,11 @@ int main() {
 				cin >> id;
 				cout << "Enter Age: ";
 				cin >> age;
+				while (age <= 0)
+				{
+					cout << "Error- Age Illigal!!" << endl << "Try Again!\nEnter Age: ";
+					cin >> age;
+				}
 				cout << "Avarage: ";
 				cin >> avarage;
 				cout << "institute: ";

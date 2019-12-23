@@ -38,7 +38,7 @@ void Person::SetAge(int age)
 
 void Person::print()
 {
-	cout << name << endl;
-	cout << id << endl;
-	cout << age << endl;
+	cout << "Name: " << name << endl;
+	cout << "ID: " << id << endl;
+	cout << "Age: " << age << endl;
 }
