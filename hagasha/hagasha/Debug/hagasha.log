@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\yael\desktop\git-lehagasha\hagasha\hagasha\source.cpp(10): warning C4101: 'work': unreferenced local variable
+c:\users\yael\desktop\git-lehagasha\hagasha\hagasha\source.cpp(18): warning C4101: 'same_inst': unreferenced local variable
+  hagasha.vcxproj -> C:\Users\Yael\Desktop\git-lehagasha\hagasha\Debug\hagasha.exe

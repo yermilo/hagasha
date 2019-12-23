@@ -1,6 +1,8 @@
 #include<iostream>
 #include<string>
 using namespace std;
+#ifndef P_H
+#define P_H
 
 class Person {
 protected:
@@ -17,3 +19,4 @@ public:
 	void print();
 
 };
+#endif

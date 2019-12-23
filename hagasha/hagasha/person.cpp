@@ -42,3 +42,4 @@ void Person::print()
 	cout << id << endl;
 	cout << age << endl;
 }
+
