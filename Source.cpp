@@ -11,20 +11,26 @@ int main() {
 	long salary,id;
 	string name,institute;
 
-	cout << "enter the number of people to enter: " << endl;
+	cout << "Enter the number of people to enter: ";
 	cin >> size;
 	arr = new Person*[size];
 
 	for (int i = 0; i < size; i++) {
-		cout << "for the " << i << "person:  " << endl;
-		cout << "if the person is an employee enter 1:" << endl;
-		cout << "if the person is a student enter 2:" << endl;
+		cout << "For the " << i << " Person:  " << endl;
+		cout << "If the person is an employee Enter 1:" << endl;
+		cout << "If the person is a student Enter 2:" << endl;
 		cin >> choice;
 			switch (choice)
 			{
 			case (1):
-				cout << "enter employee name,id, age and salary: " << endl;
-				cin >> name >> id >> age >> salary;
+				cout << "Enter employee" << endl << "name: <<";
+				cin >> name;
+				cout << "ID: ";
+				cin >> id;
+				cout << "age: ";
+				cin >> age;
+				cout << "salary: ";
+				cin >> salary;
 				arr[i] = new employee(name,id,age,salary);
 				break;
 			case (2):
