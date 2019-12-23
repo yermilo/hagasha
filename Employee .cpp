@@ -23,5 +23,5 @@ void employee::SetSalary(float salary)
 void employee::print()
 {
 	Person::print();
-	cout << salary<<endl;
+	cout << "Salary: " << salary<< endl;
 }

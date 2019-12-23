@@ -16,6 +16,6 @@ public:
 	void SetName(string name);
 	void SetId(long id);
 	void SetAge(int age);
-	void print();
+	virtual void print();
 };
 #endif

@@ -3,6 +3,7 @@
 #include"student.h"
 #include"WorkingStudent.h"
 #include<iostream>
+#include<typeinfo>
 using namespace std;
 
 void PrintArr(Person ** arr,int size)
@@ -10,7 +11,16 @@ void PrintArr(Person ** arr,int size)
 	for (int i = 0; i < size; i++)
 	{
 		cout << "===Person Number " << i + 1 << "====" << endl;
+		if (typeid(*arr[i]) == typeid(student))
+		{
+			cout << "Type: Student" << endl;
+		}
+		if (typeid(*arr[i]) == typeid(employee))
+		{
+			cout << "Type: Employee" << endl;
+		}
 		arr[i]->print();
+		//arr[i]->print();
 	}
 }
 

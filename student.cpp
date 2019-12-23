@@ -30,6 +30,6 @@ void student::setInstitute(string institute)
 void student::print()
 {
 	Person::print();
-	cout << average << endl;
-	cout << institute << endl;
+	cout << "average: " << average << endl;
+	cout << "institute: " << institute << endl;
 }
