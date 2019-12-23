@@ -1,3 +1,5 @@
+#ifndef Employee_h
+#define Employee_h
 #include"person.h"
 
 class employee :public Person {
@@ -9,5 +11,5 @@ class employee :public Person {
 			employee(employee&other);
 			void SetSalary(float salary);
 			void print();
-
 };
+#endif

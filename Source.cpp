@@ -1,6 +1,6 @@
+#include"Employee .h"
 #include"person.h"
 #include"student.h"
-#include"Employee .h"
 #include"WorkingStudent.h"
 #include<iostream>
 using namespace std;
@@ -37,8 +37,6 @@ int main() {
 				arr[i]->print;
 			}
 	}
-
-
 	return 0;
 }
 

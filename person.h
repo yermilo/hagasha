@@ -1,3 +1,5 @@
+#ifndef Person_h
+#define Person_h
 #include<iostream>
 #include<string>
 using namespace std;
@@ -15,5 +17,5 @@ public:
 	void SetId(long id);
 	void SetAge(int age);
 	void print();
-
 };
+#endif
