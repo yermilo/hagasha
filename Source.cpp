@@ -23,7 +23,7 @@ int main() {
 			switch (choice)
 			{
 			case (1):
-				cout << "==Enter employee==" << endl << "Enter name: <<";
+				cout << "==Enter employee==" << endl << "Enter name: ";
 				cin >> name;
 				cout << "Enter ID: ";
 				cin >> id;
@@ -42,14 +42,20 @@ int main() {
 				cin >> age;
 				cout << "Avarage: ";
 				cin >> avarage;
-				cout << "institute";
+				cout << "institute: ";
 				cin >> institute;
 				arr[i] = new student(name, id, age, avarage, institute);
 				break;
+			default:
+				cout << "Error:Enter Only 1 OR 2!! - Try again" << endl;
+				i--;
 			}
-			for (int i = 0; i < size; i++) {
-				//arr[i]->print;
-			}
+	}
+
+	for (int i = 0; i < size; i++)
+	{
+		cout << "===Person Number " << i + 1 << "====" << endl;
+		arr[i]->print();
 	}
 	return 0;
 }
